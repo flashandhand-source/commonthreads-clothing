@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #f4efe3;
+  --color-cream-dark: #e8e0cc;
+  --color-black: #141311;
+  --color-ink: #1f1d19;
+  --color-gold: #b8914a;
+  --color-gold-light: #d4af63;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-cream-dark: var(--color-cream-dark);
+  --color-black: var(--color-black);
+  --color-ink: var(--color-ink);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: "Anton", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.placeholder-box {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(20, 19, 17, 0.06),
+    rgba(20, 19, 17, 0.06) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  background-color: var(--color-cream-dark);
+}
