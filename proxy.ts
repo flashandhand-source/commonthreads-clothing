@@ -8,7 +8,7 @@ export const config = {
   ],
 };
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const secret = process.env.PREVIEW_SESSION_SECRET;
 
   // If auth isn't configured, don't lock anyone out.
